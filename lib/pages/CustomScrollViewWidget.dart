@@ -16,8 +16,8 @@ class CustomScrollViewWidget extends StatelessWidget {
           expandedHeight: 230.0,
           flexibleSpace: FlexibleSpaceBar(
             title: Text('复仇者联盟'),
-            background: Image.network(
-              'http://img.haote.com/upload/20180918/2018091815372344164.jpg',
+            background: Image.asset(
+              'images/union.jpg',
               fit: BoxFit.fitHeight,
             ),
           ),
