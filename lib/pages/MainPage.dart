@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/pages/ContainerWidget.dart';
 import 'package:new_flutter/pages/CustomScrollViewWidget.dart';
 import 'package:new_flutter/pages/TextWidget.dart';
 
@@ -33,12 +34,18 @@ class MyListView extends StatelessWidget {
         },
       ),
       ListTile(
-        title: Text("TextWidget"),
+        title: Text("Text"),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => new TextWidget()));
         },
+      ),
+      ListTile(
+        title: Text("Container"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => new ContainerWidget())),
       )
     ]).toList());
   }
