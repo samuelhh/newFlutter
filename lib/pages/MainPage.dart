@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter/pages/ContainerWidget.dart';
 import 'package:new_flutter/pages/CustomScrollViewWidget.dart';
+import 'package:new_flutter/pages/ImageWidget.dart';
 import 'package:new_flutter/pages/TextWidget.dart';
 
 class MainPage extends StatelessWidget {
@@ -46,6 +47,14 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(context,
             MaterialPageRoute(builder: (context) => new ContainerWidget())),
+      ),
+      ListTile(
+        title: Text("image"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => new ImageWidget()));
+        },
       )
     ]).toList());
   }
