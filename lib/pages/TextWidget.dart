@@ -116,7 +116,7 @@ class MyText extends StatelessWidget {
             decorationStyle: TextDecorationStyle.double,
           ),
           textAlign: TextAlign.left,
-          maxLines: 2,
+          maxLines: 3,
           overflow: TextOverflow.ellipsis,
         )
       ],

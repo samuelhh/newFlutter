@@ -5,10 +5,12 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("imageWidget"),
+        title: Text("Image"),
       ),
       body: Center(
-        child: Text("data"),
+        child: Image.network(
+          "http://n.sinaimg.cn/ent/4_img/upload/89fcfcd9/28/w690h938/20200827/c26e-iyhvyva4866898.jpg",
+        ),
       ),
     );
   }
