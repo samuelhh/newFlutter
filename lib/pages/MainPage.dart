@@ -49,7 +49,7 @@ class MyListView extends StatelessWidget {
             MaterialPageRoute(builder: (context) => new ContainerWidget())),
       ),
       ListTile(
-        title: Text("image"),
+        title: Text("Image"),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
           Navigator.push(context,

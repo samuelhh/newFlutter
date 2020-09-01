@@ -5,7 +5,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("TextWidget"),
+        title: Text("Text"),
       ),
       body: Center(child: MyText()),
     );
