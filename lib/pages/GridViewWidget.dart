@@ -12,7 +12,6 @@ class GridViewWidget extends StatelessWidget {
   }
 
   Widget _myGridView() {
-    final String _url = "images/none.png";
     return GridView(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
