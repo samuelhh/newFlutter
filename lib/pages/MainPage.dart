@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter/pages/ContainerWidget.dart';
 import 'package:new_flutter/pages/CustomScrollViewWidget.dart';
+import 'package:new_flutter/pages/GridViewWidget.dart';
 import 'package:new_flutter/pages/ImageWidget.dart';
 import 'package:new_flutter/pages/TextWidget.dart';
 
@@ -55,6 +56,12 @@ class MyListView extends StatelessWidget {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => new ImageWidget()));
         },
+      ),
+      ListTile(
+        title: Text("GridView"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => new GridViewWidget())),
       )
     ]).toList());
   }
