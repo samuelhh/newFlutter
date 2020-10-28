@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class FlutterSwiper extends StatelessWidget {
+  FlutterSwiper({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,15 +28,17 @@ Widget _bannerSwiper() {
     itemBuilder: (BuildContext context, int index) {
       return Image.network("${swiperDataList[index]}");
     },
-    itemCount: 3,
+    itemCount: swiperDataList.length,
     pagination: SwiperPagination(
-        // builder: DotSwiperPaginationBuilder(
-        //   color: Colors.grey,
-        //   activeColor: Colors.blue,
-        // ),
-        ),
-    viewportFraction: 0.9,
-    scale: 0.9,
+      builder: DotSwiperPaginationBuilder(
+        // color: Colors.grey,
+        // activeColor: Colors.blue,
+        size: 5.0,
+        activeSize: 7.0,
+      ),
+    ),
+    // viewportFraction: 0.9,
+    // scale: 0.9,
     autoplay: true,
 
     // itemWidth: 300.0,
