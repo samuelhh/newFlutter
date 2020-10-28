@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/pages/FlutterSwiper.dart';
 import './ContainerWidget.dart';
 import './CustomScrollViewWidget.dart';
 import './GridViewWidget.dart';
@@ -31,6 +32,11 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => DefaultApp())),
+      ),
+      ListTile(
+        title: Text("FlutterSwiper"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>FlutterSwiper())),
       ),
       ListTile(
         title: Text("CustomScrollView"),
