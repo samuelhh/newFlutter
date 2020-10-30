@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter/pages/FlutterSwiper.dart';
+import 'package:new_flutter/pages/StaticCard.dart';
 import './ContainerWidget.dart';
 import './CustomScrollViewWidget.dart';
 import './GridViewWidget.dart';
@@ -36,7 +37,8 @@ class MyListView extends StatelessWidget {
       ListTile(
         title: Text("FlutterSwiper"),
         trailing: Icon(Icons.keyboard_arrow_right),
-        onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>FlutterSwiper())),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => FlutterSwiper())),
       ),
       ListTile(
         title: Text("CustomScrollView"),
@@ -75,7 +77,13 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(context,
             MaterialPageRoute(builder: (context) => new GridViewWidget())),
-      )
+      ),
+      ListTile(
+        title: Text("StaticCard"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => StaticCard())),
+      ),
     ]).toList());
   }
 }
