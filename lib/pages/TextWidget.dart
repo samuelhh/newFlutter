@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_color_plugin/flutter_color_plugin.dart';
 
 class TextWidget extends StatelessWidget {
   @override
@@ -24,6 +25,12 @@ class MyText extends StatelessWidget {
               fontSize: 30.0,
               decoration: TextDecoration.lineThrough,
               decorationColor: Colors.red),
+        ),
+        Text(
+          'flutter_color_plugin使用方法',//https://pub.dev/packages/flutter_color_plugin
+          style: TextStyle(
+            color: ColorUtil.color('#ff0000'),
+          ),
         ),
         Text(
           'hello2',
