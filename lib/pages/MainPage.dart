@@ -12,27 +12,29 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPage extends State<MainPage> {
+  final _curColor = Colors.blue;
+  final _normalColor = Colors.grey;
+
   final List<BottomNavigationBarItem> bottomNavItems = [
     BottomNavigationBarItem(
       icon: Icon(Icons.home, color: Colors.grey),
       activeIcon: Icon(Icons.home, color: Colors.blue),
-      title: Text("首页"),
-    
+      label: "首页",
     ),
     BottomNavigationBarItem(
       icon: Icon(Icons.message, color: Colors.grey),
       activeIcon: Icon(Icons.message, color: Colors.blue),
-      title: Text("消息"),
+      label: "消息",
     ),
     BottomNavigationBarItem(
       icon: Icon(Icons.shopping_cart, color: Colors.grey),
       activeIcon: Icon(Icons.shopping_cart, color: Colors.blue),
-      title: Text("购物车"),
+      label: "购物车",
     ),
     BottomNavigationBarItem(
       icon: Icon(Icons.person, color: Colors.grey),
       activeIcon: Icon(Icons.person, color: Colors.blue),
-      title: Text("我的"),
+      label: "我的",
     ),
   ];
 
