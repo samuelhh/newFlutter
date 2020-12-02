@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/pages/ListViewWidget.dart';
 import './StaticCard.dart';
 import './ContainerWidget.dart';
 import './CustomScrollViewWidget.dart';
@@ -83,6 +84,12 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => StaticCard())),
+      ),
+      ListTile(
+        title: Text("ListView"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ListViewWidget())),
       ),
     ]).toList());
   }
