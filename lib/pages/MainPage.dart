@@ -63,7 +63,7 @@ class _MainPage extends State<MainPage> {
     );
   }
 
-//切换页面
+  //切换页面
   void _changePage(int index) {
     if (index != _currentIndex) {
       setState(() {
