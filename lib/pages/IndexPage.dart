@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter/pages/LaunchUrl.dart';
 import 'package:new_flutter/pages/ListViewWidget.dart';
 import './StaticCard.dart';
 import './ContainerWidget.dart';
@@ -90,6 +91,12 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => ListViewWidget())),
+      ),
+      ListTile(
+        title: Text("launchUrl"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LaunchUrl())),
       ),
     ]).toList());
   }

@@ -32,6 +32,7 @@ dependencies:
   transparent_image: ^1.0.0
   flutter_swiper : ^1.1.6
   flutter_color_plugin: ^0.0.2
+  url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
