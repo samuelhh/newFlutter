@@ -8,7 +8,7 @@ class ContainerWidget extends StatelessWidget {
           title: Text("Container"),
         ),
         body: Container(
-          color: Colors.grey[200],
+          // color: Colors.grey[200],
           child: ListView(
             children: [
               Container(
