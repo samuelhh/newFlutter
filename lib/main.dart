@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       home: MainPage(),
+      debugShowCheckedModeBanner: false, //开发模式，去掉右上角有个debug标志
     );
   }
 }
