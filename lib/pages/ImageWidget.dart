@@ -1,5 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class ImageWidget extends StatelessWidget {
   @override
@@ -50,7 +52,20 @@ class ImageWidget extends StatelessWidget {
                       placeholder: (context, url) =>
                           CircularProgressIndicator(),
                       errorWidget: (context, url, error) => Icon(Icons.error),
-                    ))
+                    )),
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Center(child: CircularProgressIndicator()),
+                          Center(
+                            child: FadeInImage.memoryNetwork(
+                              placeholder: kTransparentImage,
+                              image: 'https://img1.sycdn.imooc.com/szimg/5c7e6835087ef3d806000338-360-202.jpg',
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )

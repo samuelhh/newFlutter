@@ -1,3 +1,5 @@
+// import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:new_flutter/pages/LaunchUrl.dart';
 import 'package:new_flutter/pages/ListViewWidget.dart';
@@ -9,6 +11,7 @@ import './ImageWidget.dart';
 import './TextWidget.dart';
 import './DefaultApp.dart';
 import './FlutterSwiper.dart';
+import './PhotoApp.dart';
 
 class IndexPage extends StatelessWidget {
   @override
@@ -97,6 +100,12 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => LaunchUrl())),
+      ),
+      ListTile(
+        title: Text("photoApp"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => PhotoApp())),
       ),
     ]).toList());
   }
