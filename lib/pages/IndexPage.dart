@@ -1,8 +1,9 @@
 // import 'dart:js';
 
 import 'package:flutter/material.dart';
-import 'package:new_flutter/pages/LaunchUrl.dart';
-import 'package:new_flutter/pages/ListViewWidget.dart';
+import './LaunchUrl.dart';
+import './ListViewWidget.dart';
+import './LogoApp.dart';
 import './StaticCard.dart';
 import './ContainerWidget.dart';
 import './CustomScrollViewWidget.dart';
@@ -107,6 +108,12 @@ class MyListView extends StatelessWidget {
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => PhotoApp())),
       ),
+      ListTile(
+        title: Text("logoApp"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => LogoApp())),
+      )
     ]).toList());
   }
 }
