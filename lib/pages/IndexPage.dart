@@ -13,6 +13,7 @@ import './TextWidget.dart';
 import './DefaultApp.dart';
 import './FlutterSwiper.dart';
 import './PhotoApp.dart';
+import './PhotoHero.dart';
 
 class IndexPage extends StatelessWidget {
   @override
@@ -113,7 +114,15 @@ class MyListView extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => LogoApp())),
-      )
+      ),
+      ListTile(
+        title: Text("photoHero"),
+        trailing: Icon(Icons.keyboard_arrow_right),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => PhotoHero()),
+        ),
+      ),
     ]).toList());
   }
 }
