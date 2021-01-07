@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './pages/MainPage.dart';
+import 'package:new_flutter/navigator/NavTabs.dart';
+// import './pages/MainPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: MainPage(),
+      home: NavTabs(),
       debugShowCheckedModeBanner: false, //开发模式，去掉右上角有个debug标志
     );
   }
