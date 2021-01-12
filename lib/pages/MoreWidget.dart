@@ -15,12 +15,12 @@ import './FlutterSwiper.dart';
 import './PhotoApp.dart';
 import './PhotoHero.dart';
 
-class IndexPage extends StatefulWidget {
+class MoreWidget extends StatefulWidget {
   @override
-  _IndexPageState createState() => _IndexPageState();
+  _MoreWidgetState createState() => _MoreWidgetState();
 }
 
-class _IndexPageState extends State<IndexPage> {
+class _MoreWidgetState extends State<MoreWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

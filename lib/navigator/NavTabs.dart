@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../pages/IndexPage.dart';
+import '../pages/HomePage.dart';
 import '../pages/CartPage.dart';
 import '../pages/MsgPage.dart';
 import '../pages/PersonPage.dart';
@@ -26,7 +26,7 @@ class _NavTabsState extends State<NavTabs> {
     return Scaffold(
       body: PageView(
         controller: _controller,
-        children: [IndexPage(), MsgPage(), CartPage(), PersonPage()],
+        children: [HomePage(), MsgPage(), CartPage(), PersonPage()],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [

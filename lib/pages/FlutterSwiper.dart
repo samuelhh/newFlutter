@@ -26,7 +26,10 @@ Widget _bannerSwiper() {
   ];
   return Swiper(
     itemBuilder: (BuildContext context, int index) {
-      return Image.network("${swiperDataList[index]}");
+      return Image.network(
+        "${swiperDataList[index]}",
+        fit: BoxFit.fill,
+      );
     },
     itemCount: swiperDataList.length,
     pagination: SwiperPagination(

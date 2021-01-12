@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import './IndexPage.dart';
-import './CartPage.dart';
-import './MsgPage.dart';
-import './PersonPage.dart';
+import '../pages/MoreWidget.dart';
+import '../pages/CartPage.dart';
+import '../pages/MsgPage.dart';
+import '../pages/PersonPage.dart';
 
-class MainPage extends StatefulWidget {
+class MainNav extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _MainPage();
-  }
+  _MainNavState createState() => _MainNavState();
 }
 
-class _MainPage extends State<MainPage> {
+class _MainNavState extends State<MainNav> {
   final _curColor = Colors.blue;
   final _normalColor = Colors.grey;
 
@@ -40,7 +38,7 @@ class _MainPage extends State<MainPage> {
 
   int _currentIndex;
 
-  final pages = [IndexPage(), MsgPage(), CartPage(), PersonPage()];
+  final pages = [MoreWidget(), MsgPage(), CartPage(), PersonPage()];
 
   @override
   void initState() {
