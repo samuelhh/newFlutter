@@ -52,17 +52,7 @@ class _PersonPageState extends State<PersonPage> {
       },
     );
   }
-//获取网络数据
-  void getContent() {
-    NetUtil.get("http://www.mocky.io/v2/5b7143ae3200001402f36c46", (data) {
-      User user = User.fromJson(data);
-      setState(() {
-        items = user.data;
-      });
-    }, errorCallBack: (errorMsg) {
-      print("error:" + errorMsg);
-    });
-  }
+
   _myListView(context, items) {
     return ListView.builder(
       itemBuilder: (context, index) => ListTile(
