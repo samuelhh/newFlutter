@@ -37,9 +37,17 @@ dependencies:
   video_player: ^1.0.1
   fluttertoast: ^7.1.6
 
+  http: ^0.12.2
+  dio: ^3.0.10
+  shared_preferences: ^0.5.12+4
+  json_annotation: ^3.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
+  build_runner: ^1.7.3
+  json_serializable: ^3.2.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

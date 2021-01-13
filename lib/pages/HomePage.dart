@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Container(
-                  height: 1200,
+                  height: 800,
                   child: ListTile(
                     title: Text("sadfasd"),
                   ),
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
         Opacity(
           opacity: appBarAlpha,
           child: Container(
-            height: 60,
+            height: 80,
             decoration: BoxDecoration(color: Colors.white),
             child: Center(
               child: Padding(
