@@ -1,8 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:json_annotation/json_annotation.dart';
-import 'package:new_flutter/http/NetUtil.dart';
 import '../http/DioUtil.dart';
 import '../config/ApiConfig.dart';
 import '../model/user.dart';
@@ -40,11 +36,11 @@ class _PersonPageState extends State<PersonPage> {
       TestApi.test3,
       success: (data) {
         // 成功返回结果
-        // User user = User.fromJson(data);
+        User user = User.fromJson(data);
         setState(() {
-          // items = data.data["list"];
+          items = user.data["list"];
         });
-        print(data is String);
+        // print(user.data["list"]);
       },
       error: (error) {
         // 失败返回结果
@@ -56,7 +52,7 @@ class _PersonPageState extends State<PersonPage> {
   _myListView(context, items) {
     return ListView.builder(
       itemBuilder: (context, index) => ListTile(
-        title: Text("${items.userName}"),
+        title: Text("${items[0].userName}"),
       ),
 
       // {
